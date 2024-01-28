@@ -9,7 +9,7 @@ class SpindlerBattery(Car):
         self.current_date = current_date
 
     def needs_service(self):
-        should_be_service_date = self.last_service_date + relativedelta(years=4)
+        should_be_service_date = self.last_service_date + relativedelta(years=3)
         return self.current_date > should_be_service_date
 
    
